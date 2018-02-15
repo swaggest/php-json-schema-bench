@@ -1,10 +1,11 @@
-# Benchmark of JSON-Schema implementations for PHP
+# Comparative benchmark for JSON-schema PHP validators
 
 ## Benchmark
 
 Performance and accuracy is assessed using
 * [JSON-Schema Test Suite](https://github.com/json-schema-org/JSON-Schema-Test-Suite.git)
 * Tests included in [`ajv`](https://github.com/epoberezkin/ajv/tree/master/spec/tests/schemas)
+
 Each test is running for a number of iterations, total time is normalized to 100% of fastest runner.
 If single test is failing, whole test case is failing.
 
@@ -30,6 +31,9 @@ If single test is failing, whole test case is failing.
 * [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.10.0`
 
 ## Results
+
+These results were produced on MBP 15 ([i7](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-4770HQ+%40+2.20GHz)) with PHP 7.1.13 (no xdebug).
+Values are normalized to best result (100%) in row.
 
 * [Total](report-total.md)
 * [Draft-04](report-draft-04.md)

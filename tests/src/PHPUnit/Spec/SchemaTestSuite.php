@@ -158,7 +158,7 @@ abstract class SchemaTestSuite extends \PHPUnit_Framework_TestCase
             $this->markTestSkipped();
             return;
         }
-        $this->runSpecTest($schemaData, $data, $isValid, $name, static::SCHEMA_VERSION);
+        $this->runSpecTest($schemaData, $data, $isValid, $name, Schema::VERSION_AUTO);
     }
 
 

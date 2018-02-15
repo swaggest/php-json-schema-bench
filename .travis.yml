@@ -1,0 +1,25 @@
+language: php
+php:
+  - 7.2
+
+sudo: false
+dist: trusty
+
+## Cache composer bits
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+# execute any number of scripts before the test run, custom env's are available as variables
+before_script:
+  - composer install --dev --no-interaction --prefer-dist
+
+script:
+  - ./run_bench.sh
+
+after_script:
+ - cat ./report-total.md
+ - cat ./report-draft-04.md
+ - cat ./report-draft-06.md
+ - cat ./report-draft-07.md
+ - cat ./report-ajv.md
