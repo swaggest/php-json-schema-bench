@@ -1,0 +1,4 @@
+/vendor/
+/.idea
+benchmark-result.json
+xhprof_report.*

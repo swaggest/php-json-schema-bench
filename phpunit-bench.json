@@ -1,0 +1,6 @@
+{
+  "calcPerformanceIndex": true,
+  "defaultTestConfig": {
+    "numIterations": 500
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "swaggest/json-schema-bench",
+  "description": "Comparative benchmark for JSON-schema PHP validators",
+  "type": "project",
+  "require": {
+    "php": ">=7.1",
+    "phpunit/phpunit": "dev-master",
+    "phperf/phpunit-bench": "dev-master",
+    "phpunit/php-code-coverage": "2.2.4",
+    "justinrainbow/json-schema": "^5.2",
+    "opis/json-schema": "^1.0",
+    "geraintluff/jsv4": "^1.0",
+    "stefk/jval": "dev-master",
+    "league/json-guard": "dev-master",
+    "league/json-reference": "^1.0",
+    "swaggest/json-schema": "^0.10"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Viacheslav Poturaev",
+      "email": "vearutop@gmail.com"
+    }
+  ],
+  "support": {
+    "email": "vearutop@gmail.com"
+  },
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Swaggest\\JsonSchemaBench\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Swaggest\\JsonSchemaBench\\Tests\\": "tests/src/"
+    }
+  },
+  "repositories": [
+    {
+      "url": "https://gitlab.com/vearutop/phpunit.git",
+      "type": "git"
+    },
+    {
+      "url": "https://gitlab.com/vearutop/phpunit-bench.git",
+      "type": "git"
+    }
+  ]
+}
