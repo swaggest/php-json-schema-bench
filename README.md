@@ -1,5 +1,7 @@
 # Comparative benchmark for JSON-schema PHP validators
 
+[![Build Status](https://travis-ci.org/swaggest/php-json-schema-bench.svg?branch=master)](https://travis-ci.org/swaggest/php-json-schema-bench)
+
 ## Benchmark
 
 Performance and accuracy is assessed using

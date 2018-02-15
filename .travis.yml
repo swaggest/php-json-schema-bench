@@ -1,6 +1,6 @@
 language: php
 php:
-  - 7.2
+  - 7.1
 
 sudo: false
 dist: trusty
@@ -12,10 +12,11 @@ cache:
 
 # execute any number of scripts before the test run, custom env's are available as variables
 before_script:
+  - phpenv config-rm xdebug.ini
   - composer install --dev --no-interaction --prefer-dist
 
 script:
-  - ./run_bench.sh
+  - ./run_bench.sh > /dev/null
 
 after_script:
  - cat ./report-total.md

@@ -935,7 +935,7 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/vearutop/phpunit.git",
-                "reference": "600c5e63d0bf4e0398f526affbd217e0249de232"
+                "reference": "826bc37a9bf4fbf2176c06be987cc2ea6d4fe9ef"
             },
             "require": {
                 "ext-dom": "*",
@@ -1006,7 +1006,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues"
             },
-            "time": "2018-02-13 07:01:55"
+            "time": "2018-02-15 10:11:44"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
