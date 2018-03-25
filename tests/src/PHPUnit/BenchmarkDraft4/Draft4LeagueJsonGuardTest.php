@@ -51,14 +51,7 @@ class Draft4LeagueJsonGuardTest extends Draft4Test
 
     protected function skipTest($name)
     {
-        static $skip = array(
-            // PHP Fatal error:  Maximum function nesting level of '256' reached, aborting!
-            'refRemote.json root ref in remote ref: string is valid [0]' => true,
-
-            // PHP Fatal error:  Maximum function nesting level of '256' reached, aborting!
-            'refRemote.json root ref in remote ref: object is invalid [2]' => true,
-        );
-        return isset($skip[$name]);
+        return false;
     }
 
 
