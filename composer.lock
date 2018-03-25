@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9787c84ce446625da6cb99d223a2be72",
+    "content-hash": "f4996b564d10acd75bfa29361dba9485",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -230,20 +230,20 @@
                 "schema",
                 "validation"
             ],
-            "time": "2018-02-10 19:20:42"
+            "time": "2018-02-10T19:20:42+00:00"
         },
         {
             "name": "league/json-reference",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/json-reference.git",
-                "reference": "5d68eda332488135b5edcd22da93ce53eca5b133"
+                "reference": "cecf8d4e38e1c9eda179a3798b5cac81b3f907c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/json-reference/zipball/5d68eda332488135b5edcd22da93ce53eca5b133",
-                "reference": "5d68eda332488135b5edcd22da93ce53eca5b133",
+                "url": "https://api.github.com/repos/thephpleague/json-reference/zipball/cecf8d4e38e1c9eda179a3798b5cac81b3f907c9",
+                "reference": "cecf8d4e38e1c9eda179a3798b5cac81b3f907c9",
                 "shasum": ""
             },
             "require": {
@@ -256,10 +256,16 @@
                 "cache/predis-adapter": "^0.4.0",
                 "cache/simple-cache-bridge": "^0.1.0",
                 "ext-curl": "*",
+                "peterpostmann/fileuri": "^1.0",
                 "phpbench/phpbench": "^0.13.0",
                 "phpunit/phpunit": "^5.7",
                 "scrutinizer/ocular": "~1.1",
-                "squizlabs/php_codesniffer": "~2.3"
+                "squizlabs/php_codesniffer": "~2.3",
+                "symfony/yaml": "^3.3"
+            },
+            "suggest": {
+                "peterpostmann/fileuri": "Returns a file uri from a path",
+                "symfony/yaml": "Load schemes from yaml files"
             },
             "type": "library",
             "extra": {
@@ -293,7 +299,7 @@
                 "json",
                 "json-reference"
             ],
-            "time": "2017-04-29T23:08:31+00:00"
+            "time": "2018-03-25T16:13:58+00:00"
         },
         {
             "name": "opis/json-schema",
@@ -572,7 +578,7 @@
                     "PHPUnitBenchmark\\": "src/"
                 }
             },
-            "time": "2018-02-15 05:03:30"
+            "time": "2018-02-15T05:03:30+00:00"
         },
         {
             "name": "phplang/scope-exit",
@@ -1006,7 +1012,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues"
             },
-            "time": "2018-02-15 10:11:44"
+            "time": "2018-02-15T10:11:44+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1681,7 +1687,7 @@
                 "json",
                 "validation"
             ],
-            "time": "2016-09-25 10:45:09"
+            "time": "2016-09-25T10:45:09+00:00"
         },
         {
             "name": "swaggest/code-builder",
