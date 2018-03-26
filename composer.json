@@ -4,14 +4,14 @@
   "type": "project",
   "require": {
     "php": ">=7.1",
-    "phpunit/phpunit": "dev-master",
-    "phperf/phpunit-bench": "dev-master",
+    "phpunit/phpunit": "dev-master#826bc37a9bf4fbf2176c06be987cc2ea6d4fe9ef",
+    "phperf/phpunit-bench": "dev-master#fbf0189566a7d1314bf2ab1c125fa47cfe479872",
     "phpunit/php-code-coverage": "2.2.4",
     "justinrainbow/json-schema": "^5.2",
     "opis/json-schema": "^1.0",
     "geraintluff/jsv4": "^1.0",
-    "stefk/jval": "dev-master",
-    "league/json-guard": "dev-master",
+    "stefk/jval": "dev-master#1c26dd2c16e5273d1c0565ff6c9dc51e6316c564",
+    "league/json-guard": "dev-master#256bc25825d18e715d0fea7eae37acca18d2bcb7",
     "league/json-reference": "^1.0",
     "swaggest/json-schema": "^0.10"
   },
