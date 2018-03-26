@@ -13,7 +13,7 @@
     "stefk/jval": "dev-master#1c26dd2c16e5273d1c0565ff6c9dc51e6316c564",
     "league/json-guard": "dev-master#256bc25825d18e715d0fea7eae37acca18d2bcb7",
     "league/json-reference": "^1.0",
-    "swaggest/json-schema": "^0.10"
+    "swaggest/json-schema": "^0.11.0"
   },
   "license": "MIT",
   "authors": [

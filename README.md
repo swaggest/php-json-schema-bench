@@ -16,21 +16,21 @@ If single test is failing, whole test case is failing.
 ### Draft 04
 
 * [`justinrainbow/json-schema`](https://github.com/justinrainbow/json-schema) `5.2.7`
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.3`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.4`
 * [`geraintluff/jsv4`](https://github.com/geraintluff/jsv4-php) `v1.0.1`
 * [`stefk/jval`](https://github.com/stefk/JVal) `master@1c26dd2c1`
 * [`league/json-guard`](https://github.com/thephpleague/json-guard) `master@256bc2582`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.10.0`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.11.0`
 
 ### Draft 06
 
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.3`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.10.0`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.4`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.11.0`
 
 ### Draft 07
 
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.3`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.10.0`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.4`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.11.0`
 
 ## Results
 

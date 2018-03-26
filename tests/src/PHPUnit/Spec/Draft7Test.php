@@ -11,14 +11,7 @@ class Draft7Test extends Draft4Test
 
     protected function skipTest($name)
     {
-        //$pass = 'refRemote.json root ref in remote ref';
-        //return substr($name, 0, strlen($pass)) !== $pass;
-
-        static $skip = array(
-            'iri.json validation of IRIs: a valid IRI based on IPv6 [4]' =>
-                'invalid case, see https://github.com/json-schema-org/JSON-Schema-Test-Suite/pull/213',
-        );
-        return isset($skip[$name]) ? $skip[$name] : false;
+        return false;
     }
 
     public function specProvider()
