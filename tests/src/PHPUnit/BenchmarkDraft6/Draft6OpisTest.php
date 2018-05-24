@@ -2,6 +2,7 @@
 
 namespace Swaggest\JsonSchemaBench\Tests\PHPUnit\BenchmarkDraft6;
 
+use Opis\JsonSchema\Exception\AbstractSchemaException;
 use Opis\JsonSchema\Loaders\Memory;
 use Opis\JsonSchema\Schema;
 use Opis\JsonSchema\Validator;
@@ -47,13 +48,11 @@ class Draft6OpisTest extends Draft6Test
         return $schemaStorage;
     }
 
-    /** @var \SplObjectStorage */
-    private $schemasCache;
+    /** @var Schema */
+    private $schemaCache;
 
-    protected function setUp()
-    {
-        $this->schemasCache = new \SplObjectStorage();
-    }
+    /** @var Validator */
+    private $validator = null;
 
     /**
      * @param $schemaData
@@ -65,21 +64,22 @@ class Draft6OpisTest extends Draft6Test
      */
     protected function runSpecTest($schemaData, $data, $isValid, $name, $version)
     {
-        $validator = new Validator(null, self::getLoader());
+        if ($this->validator === null) {
+            $this->validator = (new Validator())
+                ->varsSupport(false)
+                ->filtersSupport(false)
+                ->mapSupport(false)
+                ->setLoader(self::getLoader());
 
-        if (is_object($schemaData)) {
-            if ($this->schemasCache->contains($schemaData)) {
-                $schema = $this->schemasCache->offsetGet($schemaData);
-            } else {
-                $schema = new Schema($schemaData);
-                $this->schemasCache->attach($schemaData, $schema);
-            }
-        } else {
-            $schema = new Schema($schemaData);
+            $this->schemaCache = new Schema($schemaData);
         }
-        $result = $validator->schemaValidation($data, $schema);
 
-        $actualValid = $result->isValid();
+        try {
+            $actualValid = $this->validator->schemaValidation($data, $this->schemaCache)->isValid();
+        }
+        catch (AbstractSchemaException $e) {
+            $actualValid = false;
+        }
 
         $this->assertSame($isValid, $actualValid, "Test: $name");
     }
