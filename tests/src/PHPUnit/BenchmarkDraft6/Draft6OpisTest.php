@@ -69,8 +69,16 @@ class Draft6OpisTest extends Draft6Test
                 ->varsSupport(false)
                 ->filtersSupport(false)
                 ->mapSupport(false)
+                // TODO: update this when a new release of opis/json-schema is available
+                // There is a bug on opis draft-06 when using default support
+                // Will be fixed in the next release
+                ->defaultSupport(false)
                 ->setLoader(self::getLoader());
 
+            if (is_object($schemaData) && !isset($schemaData->{'$schema'})) {
+                // Force draft-06
+                $schemaData->{'$schema'} = 'http://json-schema.org/draft-06/schema#';
+            }
             $this->schemaCache = new Schema($schemaData);
         }
 
