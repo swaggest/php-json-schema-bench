@@ -16,25 +16,25 @@ If single test is failing, whole test case is failing.
 ### Draft 04
 
 * [`justinrainbow/json-schema`](https://github.com/justinrainbow/json-schema) `5.2.7`
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.4`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.9`
 * [`geraintluff/jsv4`](https://github.com/geraintluff/jsv4-php) `v1.0.1`
 * [`stefk/jval`](https://github.com/stefk/JVal) `master@1c26dd2c1`
-* [`league/json-guard`](https://github.com/thephpleague/json-guard) `master@256bc2582`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.11.0`
+* [`league/json-guard`](https://github.com/thephpleague/json-guard) `master@d03dad628`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.0`
 
 ### Draft 06
 
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.4`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.11.0`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.9`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.0`
 
 ### Draft 07
 
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.4`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.11.0`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.9`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.0`
 
 ## Results
 
-These results were produced on MBP 15 ([i7](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-4770HQ+%40+2.20GHz)) with PHP 7.1.13 (no xdebug).
+These results were produced on MBP 15 ([i7](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-4770HQ+%40+2.20GHz)) with PHP 7.2.4 (no xdebug).
 Values are normalized to best result (100%) in row.
 
 * [Total](report-total.md)
