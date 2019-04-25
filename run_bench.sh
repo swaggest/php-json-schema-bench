@@ -1,8 +1,8 @@
 #!/bin/bash
 
 run_cmd() {
-    #docker run --rm -v $(pwd):/code php:7.2 bash -c "cd /code;php vendor/bin/phpunit ./tests/src/PHPUnit/Benchmark${test_group}"
-    php vendor/bin/phpunit ./tests/src/PHPUnit/Benchmark${test_group}
+    #docker run --rm -v $(pwd):/code php:7.3 bash -c "cd /code;./vendor/bin/phpunit ./tests/src/PHPUnit/Benchmark${test_group}"
+    ./vendor/bin/phpunit ./tests/src/PHPUnit/Benchmark${test_group}
     #docker run --rm -v $(pwd):/code phperf/php-profiler php vendor/bin/phpunit ./tests/src/PHPUnit/Benchmark${test_group}
 }
 
