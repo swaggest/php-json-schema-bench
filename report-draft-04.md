@@ -1,160 +1,160 @@
 ## Mandatory spec tests for draft-04
 |Test                                                                                               |GeraintluffJsv4|JustinRainbows|LeagueJsonGuard|Opis  |StefkJval|Swaggest|
 |---------------------------------------------------------------------------------------------------|---------------|--------------|---------------|------|---------|--------|
-|testSpec:maxLength.json maxLength validation                                                       |-              |288.96        |563.61         |183.42|140.85   |100     |
-|testSpec:uniqueItems.json uniqueItems validation                                                   |100            |380.16        |833.97         |253.7 |199.58   |194.02  |
-|testSpec:uniqueItems.json uniqueItems with an array of items                                       |100            |430.48        |762.01         |170.65|145.29   |129.82  |
-|testSpec:uniqueItems.json uniqueItems with an array of items and additionalItems=false             |100            |386.55        |758.14         |183.08|137.22   |137.84  |
-|testSpec:oneOf.json oneOf                                                                          |104.76         |358.94        |594.7          |222.65|100      |159     |
-|testSpec:oneOf.json oneOf with base schema                                                         |100            |476.93        |754.73         |202.28|147      |142.42  |
-|testSpec:oneOf.json oneOf complex types                                                            |118.35         |420           |497.64         |184.13|100      |158.03  |
-|testSpec:oneOf.json oneOf with empty schema                                                        |100            |362.23        |359.96         |198.49|110.33   |142     |
-|testSpec:oneOf.json oneOf with required                                                            |101.54         |442.42        |628.46         |185.1 |100      |177.56  |
-|testSpec:oneOf.json oneOf with missing optional property                                           |100            |490.18        |474.07         |189.75|100.7    |163     |
-|testSpec:definitions.json valid definition                                                         |100            |20461.51      |9583.75        |-     |-        |770.9   |
-|testSpec:definitions.json invalid definition                                                       |-              |1072.28       |430.92         |-     |-        |100     |
-|testSpec:minimum.json minimum validation                                                           |100            |401.23        |1278.65        |352.68|192.87   |155.78  |
-|testSpec:minimum.json minimum validation (explicit false exclusivity)                              |100            |395.99        |1303.33        |332.22|197.3    |159.86  |
-|testSpec:minimum.json exclusiveMinimum validation                                                  |100            |355.17        |552.58         |278.11|150.17   |154.35  |
-|testSpec:minimum.json minimum validation with signed integer                                       |100            |408.99        |1319.54        |274.26|203.99   |157     |
-|testSpec:required.json required validation                                                         |100            |669.28        |1273.66        |275.61|182.45   |166.74  |
-|testSpec:required.json required default validation                                                 |100            |669.31        |728.19         |385.81|216.46   |198.75  |
-|testSpec:required.json required with escaped characters                                            |100            |605.2         |1690.97        |204.32|172.18   |195.93  |
-|testSpec:items.json a schema given for items                                                       |100            |375.52        |410.02         |218.74|116.06   |140.24  |
-|testSpec:items.json an array of schemas for items                                                  |100            |373.92        |806.87         |185.6 |110.99   |102.86  |
-|testSpec:items.json items and subitems                                                             |-              |686.27        |531.2          |279.56|-        |100     |
-|testSpec:items.json nested items                                                                   |296.08         |531.62        |557.61         |162.04|100      |100.28  |
-|testSpec:default.json invalid type for default                                                     |100            |535.38        |629.42         |-     |180.09   |173.24  |
-|testSpec:default.json invalid string value for default                                             |100            |558.78        |1874.25        |-     |194.88   |186.13  |
-|testSpec:patternProperties.json patternProperties validates properties matching a regex            |109.33         |314.69        |447.61         |151.71|100      |113.14  |
-|testSpec:patternProperties.json multiple simultaneous patternProperties are validated              |142.45         |393.43        |619.77         |177.98|100      |137.29  |
-|testSpec:patternProperties.json regexes are not anchored by default and are case sensitive         |102.71         |289.3         |497.68         |141.12|100      |130.64  |
-|testSpec:allOf.json allOf                                                                          |130.67         |454.98        |625.6          |167.12|100      |112.28  |
-|testSpec:allOf.json allOf with base schema                                                         |102.24         |441           |530.97         |147.22|104.94   |100     |
-|testSpec:allOf.json allOf simple types                                                             |118.07         |387.22        |788.38         |189.44|104.78   |100     |
-|testSpec:allOf.json allOf with one empty schema                                                    |100            |533.38        |719.67         |391.28|197.62   |149.09  |
-|testSpec:allOf.json allOf with two empty schemas                                                   |100            |524.11        |597.02         |364.78|156.54   |126.7   |
-|testSpec:allOf.json allOf with the first empty schema                                              |116.88         |378.96        |916.16         |207.41|100      |107.09  |
-|testSpec:allOf.json allOf with the last empty schema                                               |108.38         |371.27        |366.99         |181.52|100      |100.05  |
-|testSpec:maxProperties.json maxProperties validation                                               |100            |454.69        |1213.17        |290.69|198.54   |183.64  |
-|testSpec:minItems.json minItems validation                                                         |100            |403.94        |1648.97        |257.38|184.21   |164.49  |
-|testSpec:multipleOf.json by int                                                                    |100            |382.64        |630.31         |275.46|198.68   |152.51  |
-|testSpec:multipleOf.json by number                                                                 |100            |371.02        |1828.94        |310.34|241.65   |144.26  |
-|testSpec:multipleOf.json by small number                                                           |100            |329.67        |507.22         |327.96|187.79   |140.74  |
-|testSpec:maxItems.json maxItems validation                                                         |100            |400.84        |1727.14        |269.37|194.05   |174.42  |
-|testSpec:anyOf.json anyOf                                                                          |100            |329.63        |665.56         |231.47|105.2    |158.24  |
-|testSpec:anyOf.json anyOf with base schema                                                         |100            |324.79        |551.5          |134.33|100.19   |139     |
-|testSpec:anyOf.json anyOf complex types                                                            |125.4          |412.85        |578.1          |186.9 |100      |156.12  |
-|testSpec:anyOf.json anyOf with one empty schema                                                    |100            |393.95        |472.19         |231.26|131.1    |137.74  |
-|testSpec:anyOf.json nested anyOf, to check validation semantics                                    |122.24         |312.05        |720.04         |158.88|100      |166.61  |
-|testSpec:format.json validation of e-mail addresses                                                |100            |-             |1916.64        |416.93|271.67   |186.87  |
-|testSpec:format.json validation of IP addresses                                                    |100            |-             |2090.06        |419.63|276.13   |189.19  |
-|testSpec:format.json validation of IPv6 addresses                                                  |100            |-             |1971.56        |406.42|266.42   |186.21  |
-|testSpec:format.json validation of hostnames                                                       |100            |499.43        |887.74         |414.92|267.47   |191.22  |
-|testSpec:format.json validation of date-time strings                                               |100            |-             |1971.22        |415.36|261.08   |183.23  |
-|testSpec:format.json validation of URIs                                                            |100            |-             |2063.66        |412.68|270.13   |190.89  |
-|testSpec:ref.json root pointer ref                                                                 |-              |410.85        |598.17         |191.34|-        |100     |
-|testSpec:ref.json relative pointer ref to object                                                   |-              |480.04        |658.52         |203.89|-        |100     |
-|testSpec:ref.json relative pointer ref to array                                                    |-              |463.53        |315.69         |231.97|-        |100     |
-|testSpec:ref.json escaped pointer ref                                                              |-              |718.67        |598.12         |214.89|-        |100     |
-|testSpec:ref.json nested refs                                                                      |-              |751.24        |372.94         |371.27|-        |100     |
-|testSpec:ref.json ref overrides any sibling keywords                                               |-              |-             |632.05         |227.13|-        |100     |
-|testSpec:ref.json remote ref, containing refs itself                                               |-              |1890.71       |1250.82        |-     |-        |100     |
-|testSpec:ref.json property named $ref that is not a reference                                      |100            |317.05        |306.57         |144.66|-        |116.92  |
-|testSpec:ref.json Recursive references between schemas                                             |-              |-             |-              |313.23|-        |100     |
-|testSpec:ref.json refs with quote                                                                  |-              |-             |634.12         |212.89|-        |100     |
-|testSpec:ref.json Location-independent identifier                                                  |-              |-             |-              |225.74|-        |100     |
-|testSpec:ref.json Location-independent identifier with absolute URI                                |-              |-             |-              |296.83|-        |100     |
-|testSpec:ref.json Location-independent identifier with base URI change in subschema                |-              |-             |-              |300.78|-        |100     |
-|testSpec:pattern.json pattern validation                                                           |100            |355.4         |551.65         |226.47|176.17   |147.8   |
-|testSpec:pattern.json pattern is not anchored                                                      |100            |431.77        |5337.58        |352.53|245.44   |161.5   |
-|testSpec:properties.json object properties validation                                              |119.31         |410.01        |574.41         |163.44|100      |117.44  |
-|testSpec:properties.json properties, patternProperties, additionalProperties interaction           |125.43         |479.04        |778.94         |206.59|100      |147.78  |
-|testSpec:properties.json properties with escaped characters                                        |274.64         |602.45        |657.64         |157.73|103.9    |100     |
-|testSpec:dependencies.json dependencies                                                            |100            |452.78        |1412.85        |293.08|200.58   |191.44  |
-|testSpec:dependencies.json multiple dependencies                                                   |100            |382.62        |1002.11        |192.36|141.95   |183.02  |
-|testSpec:dependencies.json multiple dependencies subschema                                         |194.39         |466.39        |534.31         |168.13|100      |147.53  |
-|testSpec:dependencies.json dependencies with escaped characters                                    |105.6          |365.61        |804.69         |156.7 |100      |148.76  |
-|testSpec:minLength.json minLength validation                                                       |-              |265.34        |399.18         |147.1 |121.12   |100     |
-|testSpec:type.json integer type matches integers                                                   |100            |318.45        |729.12         |141.21|120.27   |146.3   |
-|testSpec:type.json number type matches numbers                                                     |100            |335.84        |1145.78        |163.88|131.15   |150.47  |
-|testSpec:type.json string type matches strings                                                     |100            |331.2         |774.05         |172.69|135.32   |150.25  |
-|testSpec:type.json object type matches objects                                                     |100            |328.51        |841.17         |157.68|127.53   |150.41  |
-|testSpec:type.json array type matches arrays                                                       |100            |313.57        |774.95         |147.17|121.42   |144.67  |
-|testSpec:type.json boolean type matches booleans                                                   |100            |322           |979.7          |146.69|125.84   |151.99  |
-|testSpec:type.json null type matches only the null object                                          |100            |311.02        |623.87         |133.15|117.01   |143.48  |
-|testSpec:type.json multiple types can be specified in an array                                     |100            |372.84        |999.01         |193.04|136.74   |149.47  |
-|testSpec:type.json type as array with one item                                                     |100            |377.55        |2426.49        |209.23|150.77   |144.76  |
-|testSpec:type.json type                                                                            |100            |408.11        |1015.11        |223.53|155.18   |162.14  |
-|testSpec:additionalItems.json additionalItems as schema                                            |110.04         |359.44        |845.35         |196.35|100      |115.75  |
-|testSpec:additionalItems.json items is schema, no additionalItems                                  |100            |581.73        |510.77         |369.76|132.55   |147.89  |
-|testSpec:additionalItems.json array of items with no additionalItems                               |100            |514.2         |991.11         |287.62|129.48   |133.12  |
-|testSpec:additionalItems.json additionalItems as false without items                               |100            |515.33        |876.06         |392.81|334.95   |241.02  |
-|testSpec:additionalItems.json additionalItems are allowed by default                               |100            |728.16        |635.68         |308.33|207.29   |147.68  |
-|testSpec:refRemote.json remote ref                                                                 |-              |397.83        |1237.78        |277.79|-        |100     |
-|testSpec:refRemote.json fragment within remote ref                                                 |-              |432.97        |286.02         |310.54|-        |100     |
-|testSpec:refRemote.json ref within remote ref                                                      |-              |479.96        |327.87         |411.27|-        |100     |
-|testSpec:refRemote.json base URI change                                                            |-              |681.66        |1360.89        |316.13|100      |121.39  |
-|testSpec:refRemote.json base URI change - change folder                                            |-              |568.28        |455.23         |293.29|-        |100     |
-|testSpec:refRemote.json base URI change - change folder in subschema                               |-              |586.82        |714.69         |290.97|-        |100     |
-|testSpec:refRemote.json root ref in remote ref                                                     |-              |581.2         |-              |387.56|100      |169.83  |
-|testSpec:not.json not                                                                              |100            |308.42        |801.1          |151.09|100.53   |176.15  |
-|testSpec:not.json not multiple types                                                               |100            |327.13        |856.58         |170.68|110.03   |199.62  |
-|testSpec:not.json not more complex schema                                                          |124.98         |386.34        |628.49         |181.27|100      |197.57  |
-|testSpec:not.json forbidden property                                                               |100            |-             |311            |165.52|108.25   |167.23  |
-|testSpec:maximum.json maximum validation                                                           |100            |401.13        |1608.6         |338.21|189.19   |156.97  |
-|testSpec:maximum.json maximum validation (explicit false exclusivity)                              |100            |395.82        |1677.84        |329.9 |184.68   |154.36  |
-|testSpec:maximum.json exclusiveMaximum validation                                                  |100            |368.3         |606.64         |279.72|148.52   |150.68  |
-|testSpec:enum.json simple enum validation                                                          |100            |434.13        |2029.92        |212.13|167.55   |149.83  |
-|testSpec:enum.json heterogeneous enum validation                                                   |100            |422.6         |548.09         |202.39|169.01   |225.14  |
-|testSpec:enum.json enums in properties                                                             |100            |581.11        |1306.83        |236.99|145.33   |155.75  |
-|testSpec:enum.json enum with escaped characters                                                    |100            |450.25        |650.48         |257.59|192.18   |158.81  |
-|testSpec:enum.json enum with false does not match 0                                                |100            |381.43        |1571.91        |167.15|150.56   |147.95  |
-|testSpec:enum.json enum with true does not match 1                                                 |100            |379.71        |471.19         |162.62|150.93   |146.01  |
+|testSpec:maxLength.json maxLength validation                                                       |-              |279.33        |551.73         |175.25|142.22   |100     |
+|testSpec:uniqueItems.json uniqueItems validation                                                   |100            |365.48        |837.06         |246.39|203.44   |199.08  |
+|testSpec:uniqueItems.json uniqueItems with an array of items                                       |100            |436.99        |792.65         |178.71|157.08   |143.7   |
+|testSpec:uniqueItems.json uniqueItems with an array of items and additionalItems=false             |100            |376.15        |758.42         |184.29|135.47   |146.58  |
+|testSpec:oneOf.json oneOf                                                                          |105.22         |341.56        |624.8          |224.43|100      |155     |
+|testSpec:oneOf.json oneOf with base schema                                                         |100            |472.39        |758.31         |203.61|147.75   |143.27  |
+|testSpec:oneOf.json oneOf complex types                                                            |116.5          |427.49        |482.6          |199.17|100      |164.04  |
+|testSpec:oneOf.json oneOf with empty schema                                                        |100            |357.26        |357.29         |208.59|110.09   |146.69  |
+|testSpec:oneOf.json oneOf with required                                                            |105.21         |405.67        |635.19         |190.84|100      |182.59  |
+|testSpec:oneOf.json oneOf with missing optional property                                           |101.38         |477.33        |464.29         |188.26|100      |158.02  |
+|testSpec:definitions.json valid definition                                                         |100            |21001.16      |9980.37        |-     |-        |816.54  |
+|testSpec:definitions.json invalid definition                                                       |-              |1014.68       |419.71         |-     |-        |100     |
+|testSpec:minimum.json minimum validation                                                           |100            |376.04        |1235.57        |323.37|186.83   |160.05  |
+|testSpec:minimum.json minimum validation (explicit false exclusivity)                              |100            |377.6         |1295.22        |314.69|182.13   |153.12  |
+|testSpec:minimum.json exclusiveMinimum validation                                                  |100            |329.82        |505.56         |249.42|145.05   |150.47  |
+|testSpec:minimum.json minimum validation with signed integer                                       |100            |418.76        |1311.17        |265.92|204.34   |158.25  |
+|testSpec:required.json required validation                                                         |100            |649.04        |1303.01        |269.92|185.22   |168.21  |
+|testSpec:required.json required default validation                                                 |100            |678.9         |759.16         |418.23|236.79   |215.98  |
+|testSpec:required.json required with escaped characters                                            |100            |572.35        |520.77         |193.92|169.17   |184.48  |
+|testSpec:items.json a schema given for items                                                       |100            |385.9         |409.63         |216.87|120.72   |140.93  |
+|testSpec:items.json an array of schemas for items                                                  |100            |367.47        |807.39         |185.38|110.13   |105.46  |
+|testSpec:items.json items and subitems                                                             |-              |683.32        |529.11         |282.42|-        |100     |
+|testSpec:items.json nested items                                                                   |297.04         |523.2         |551.8          |158.08|100      |104.53  |
+|testSpec:default.json invalid type for default                                                     |100            |523.95        |655.55         |-     |177.51   |188.64  |
+|testSpec:default.json invalid string value for default                                             |100            |531.65        |1895.8         |-     |197.78   |178.47  |
+|testSpec:patternProperties.json patternProperties validates properties matching a regex            |110.94         |320.32        |455.08         |149.82|100      |115.29  |
+|testSpec:patternProperties.json multiple simultaneous patternProperties are validated              |138.72         |379.82        |598.88         |169.22|100      |131.13  |
+|testSpec:patternProperties.json regexes are not anchored by default and are case sensitive         |103.63         |310.57        |512.06         |141.34|100      |134.67  |
+|testSpec:allOf.json allOf                                                                          |124.61         |449.32        |623.14         |169.98|100      |113.91  |
+|testSpec:allOf.json allOf with base schema                                                         |100            |424.93        |521.95         |149.76|106.48   |103.99  |
+|testSpec:allOf.json allOf simple types                                                             |114.76         |369.35        |785.81         |185.26|104.6    |100     |
+|testSpec:allOf.json allOf with one empty schema                                                    |100            |532.74        |747.45         |399.44|203.08   |164.09  |
+|testSpec:allOf.json allOf with two empty schemas                                                   |100            |542.54        |633.33         |380.18|161.36   |135.59  |
+|testSpec:allOf.json allOf with the first empty schema                                              |104.13         |344.08        |879.09         |191.61|100      |103.83  |
+|testSpec:allOf.json allOf with the last empty schema                                               |109.72         |360.24        |369.06         |177.39|100      |101.48  |
+|testSpec:maxProperties.json maxProperties validation                                               |100            |465.01        |1238.07        |292.47|206.63   |188.17  |
+|testSpec:minItems.json minItems validation                                                         |100            |410.66        |1709.38        |261.15|197.27   |170.07  |
+|testSpec:multipleOf.json by int                                                                    |100            |366.74        |586.71         |262.55|187.59   |141.67  |
+|testSpec:multipleOf.json by number                                                                 |100            |397.66        |1854.08        |296.85|239.89   |144.47  |
+|testSpec:multipleOf.json by small number                                                           |100            |333.72        |526.55         |330.82|191.81   |145.56  |
+|testSpec:maxItems.json maxItems validation                                                         |100            |399.27        |1781.3         |268.1 |198.07   |176.75  |
+|testSpec:anyOf.json anyOf                                                                          |100            |348.98        |618.9          |229.58|103.45   |152.99  |
+|testSpec:anyOf.json anyOf with base schema                                                         |126.17         |320.61        |532.74         |125.81|100      |140.2   |
+|testSpec:anyOf.json anyOf complex types                                                            |116.77         |409.04        |575.12         |184.88|100      |158.98  |
+|testSpec:anyOf.json anyOf with one empty schema                                                    |100            |440.95        |488.69         |231.43|135.77   |144.61  |
+|testSpec:anyOf.json nested anyOf, to check validation semantics                                    |115.1          |305.62        |730.39         |149.58|100      |170.26  |
+|testSpec:format.json validation of e-mail addresses                                                |100            |-             |2017.82        |429.79|273.88   |194.19  |
+|testSpec:format.json validation of IP addresses                                                    |100            |-             |2079.06        |414.83|263.91   |188.16  |
+|testSpec:format.json validation of IPv6 addresses                                                  |100            |-             |2100.03        |422.47|272.02   |191.73  |
+|testSpec:format.json validation of hostnames                                                       |100            |520.09        |910.83         |421.24|274.25   |195.09  |
+|testSpec:format.json validation of date-time strings                                               |100            |-             |2150.71        |412.88|278.46   |188.76  |
+|testSpec:format.json validation of URIs                                                            |100            |-             |2005.58        |407.42|267.89   |188.18  |
+|testSpec:ref.json root pointer ref                                                                 |-              |410.16        |593.86         |191.33|-        |100     |
+|testSpec:ref.json relative pointer ref to object                                                   |-              |454.81        |658.05         |210.66|-        |100     |
+|testSpec:ref.json relative pointer ref to array                                                    |-              |466.18        |318.76         |232.7 |-        |100     |
+|testSpec:ref.json escaped pointer ref                                                              |-              |666.32        |566.15         |207.39|-        |100     |
+|testSpec:ref.json nested refs                                                                      |-              |706.41        |366.66         |346.37|-        |100     |
+|testSpec:ref.json ref overrides any sibling keywords                                               |-              |-             |586.82         |210.82|-        |100     |
+|testSpec:ref.json remote ref, containing refs itself                                               |-              |1758.49       |1183.76        |-     |-        |100     |
+|testSpec:ref.json property named $ref that is not a reference                                      |100            |314.27        |299.68         |149.09|-        |127.87  |
+|testSpec:ref.json Recursive references between schemas                                             |-              |-             |-              |296.54|-        |100     |
+|testSpec:ref.json refs with quote                                                                  |-              |-             |566.39         |192.04|-        |100     |
+|testSpec:ref.json Location-independent identifier                                                  |-              |-             |-              |232.74|-        |100     |
+|testSpec:ref.json Location-independent identifier with absolute URI                                |-              |-             |-              |288.13|-        |100     |
+|testSpec:ref.json Location-independent identifier with base URI change in subschema                |-              |-             |-              |277.44|-        |100     |
+|testSpec:pattern.json pattern validation                                                           |100            |319.63        |508.56         |207.78|166.19   |137.04  |
+|testSpec:pattern.json pattern is not anchored                                                      |100            |297.86        |3691.22        |233.97|163.75   |107.5   |
+|testSpec:properties.json object properties validation                                              |113.82         |387.27        |555.55         |157.2 |100      |114.52  |
+|testSpec:properties.json properties, patternProperties, additionalProperties interaction           |119.49         |476.48        |771.76         |208.06|100      |153.93  |
+|testSpec:properties.json properties with escaped characters                                        |259.74         |570.23        |628.17         |155.81|100      |100.78  |
+|testSpec:dependencies.json dependencies                                                            |100            |455.95        |1468.79        |305.67|205.76   |198.13  |
+|testSpec:dependencies.json multiple dependencies                                                   |100            |387.01        |509.26         |190.91|140.65   |183.34  |
+|testSpec:dependencies.json multiple dependencies subschema                                         |192.08         |465.51        |822.62         |169.44|100      |149.27  |
+|testSpec:dependencies.json dependencies with escaped characters                                    |107.07         |363.23        |806.8          |157.39|100      |147.01  |
+|testSpec:minLength.json minLength validation                                                       |-              |262.38        |414            |147.37|125.1    |100     |
+|testSpec:type.json integer type matches integers                                                   |100            |331.42        |756.53         |148.64|128.78   |157.52  |
+|testSpec:type.json number type matches numbers                                                     |100            |350.47        |1228.8         |169.34|137.33   |160.82  |
+|testSpec:type.json string type matches strings                                                     |100            |351.11        |813.7          |178.78|144.06   |159.28  |
+|testSpec:type.json object type matches objects                                                     |100            |320.42        |826.66         |154.64|130.15   |155.71  |
+|testSpec:type.json array type matches arrays                                                       |100            |327.44        |799.96         |153.32|129.03   |156.06  |
+|testSpec:type.json boolean type matches booleans                                                   |100            |328.66        |1012.75        |146.74|129.81   |155.81  |
+|testSpec:type.json null type matches only the null object                                          |100            |322.15        |657.37         |136.45|124.57   |153.36  |
+|testSpec:type.json multiple types can be specified in an array                                     |100            |378.59        |983.63         |186.28|131.97   |151.59  |
+|testSpec:type.json type as array with one item                                                     |100            |401.59        |2688.18        |213.09|167.75   |160.33  |
+|testSpec:type.json type                                                                            |100            |416.89        |1050.33        |229.48|159.57   |169.84  |
+|testSpec:additionalItems.json additionalItems as schema                                            |116.29         |413.43        |1019.25        |221.59|100      |130.59  |
+|testSpec:additionalItems.json items is schema, no additionalItems                                  |100            |613.61        |592.96         |380.8 |127.99   |147.63  |
+|testSpec:additionalItems.json array of items with no additionalItems                               |100            |520.33        |997.74         |282.89|126.49   |137.53  |
+|testSpec:additionalItems.json additionalItems as false without items                               |100            |539.25        |924.45         |406.25|348.71   |249.71  |
+|testSpec:additionalItems.json additionalItems are allowed by default                               |100            |778.55        |639.75         |328.55|214.81   |165.53  |
+|testSpec:refRemote.json remote ref                                                                 |-              |409.29        |1230.59        |274.31|-        |100     |
+|testSpec:refRemote.json fragment within remote ref                                                 |-              |423.12        |311.06         |319.46|-        |100     |
+|testSpec:refRemote.json ref within remote ref                                                      |-              |467.06        |307.81         |398.75|-        |100     |
+|testSpec:refRemote.json base URI change                                                            |-              |760.4         |1464.82        |331.87|100      |131.15  |
+|testSpec:refRemote.json base URI change - change folder                                            |-              |538.11        |427.77         |272.93|-        |100     |
+|testSpec:refRemote.json base URI change - change folder in subschema                               |-              |558.02        |688.82         |287.18|-        |100     |
+|testSpec:refRemote.json root ref in remote ref                                                     |-              |565.82        |-              |386.36|100      |182.83  |
+|testSpec:not.json not                                                                              |100            |311.84        |846.46         |159.97|115.28   |286.61  |
+|testSpec:not.json not multiple types                                                               |100            |328.05        |902.83         |175.65|112.09   |337.67  |
+|testSpec:not.json not more complex schema                                                          |114.04         |358.91        |606.03         |174.35|100      |293.83  |
+|testSpec:not.json forbidden property                                                               |100            |359.56        |307.2          |165.89|118.66   |263.11  |
+|testSpec:maximum.json maximum validation                                                           |100            |418.14        |1655.84        |324.81|190.32   |157.98  |
+|testSpec:maximum.json maximum validation (explicit false exclusivity)                              |100            |410.23        |1749.66        |339.82|191.4    |163.3   |
+|testSpec:maximum.json exclusiveMaximum validation                                                  |100            |358.23        |609.04         |265.37|153.8    |152.58  |
+|testSpec:enum.json simple enum validation                                                          |100            |423.93        |2089.28        |213.76|170.95   |157.62  |
+|testSpec:enum.json heterogeneous enum validation                                                   |100            |415.27        |534.29         |198.9 |167.12   |212.67  |
+|testSpec:enum.json enums in properties                                                             |100            |581.94        |1336.39        |243.63|152.13   |162.7   |
+|testSpec:enum.json enum with escaped characters                                                    |100            |430.46        |671.46         |254.96|199.73   |160.79  |
+|testSpec:enum.json enum with false does not match 0                                                |100            |381.57        |1602.08        |167.18|152.41   |154.58  |
+|testSpec:enum.json enum with true does not match 1                                                 |100            |376.99        |499.28         |161.61|153.03   |155.26  |
 |testSpec:enum.json enum with 0 does not match false                                                |-              |-             |-              |100   |-        |-       |
 |testSpec:enum.json enum with 1 does not match true                                                 |-              |-             |-              |100   |-        |-       |
-|testSpec:minProperties.json minProperties validation                                               |100            |-             |1673.55        |307.43|208.23   |196.12  |
-|testSpec:additionalProperties.json additionalProperties being false does not allow other properties|100            |458.58        |1068.7         |263.73|131.67   |168.4   |
-|testSpec:additionalProperties.json non-ASCII pattern with additionalProperties                     |100            |368.54        |464.97         |238.91|126.07   |181.7   |
-|testSpec:additionalProperties.json additionalProperties allows a schema which should validate      |118.06         |441.49        |749.25         |229.94|100      |128.92  |
-|testSpec:additionalProperties.json additionalProperties can exist by itself                        |100            |320.77        |874.09         |158.81|102.89   |114.24  |
-|testSpec:additionalProperties.json additionalProperties are allowed by default                     |100            |456.91        |401.97         |270.49|130.3    |133.3   |
-|testSpec:additionalProperties.json additionalProperties should not look in applicators             |153.57         |505.93        |418.95         |100   |112.06   |156.85  |
-|Total time for common passed                                                                       |100            |344.92        |656.49         |165.47|106.42   |123.29  |
-|Total time for all tests (with failed)                                                             |100            |488.26        |824.41         |240.71|114.34   |155.14  |
-|Tests passed (total: 119)                                                                          |94             |104           |112            |114   |96       |117     |
-|Tests passed, %                                                                                    |78.99          |87.39         |94.12          |95.8  |80.67    |98.32   |
+|testSpec:minProperties.json minProperties validation                                               |100            |-             |1597.85        |277.89|193.51   |176.72  |
+|testSpec:additionalProperties.json additionalProperties being false does not allow other properties|100            |464.18        |1104.88        |267.99|134.6    |177.35  |
+|testSpec:additionalProperties.json non-ASCII pattern with additionalProperties                     |100            |384.15        |487.27         |237.13|129.57   |185.42  |
+|testSpec:additionalProperties.json additionalProperties allows a schema which should validate      |118.94         |429.3         |745.6          |226.34|100      |135.74  |
+|testSpec:additionalProperties.json additionalProperties can exist by itself                        |104.55         |310.16        |850.07         |159.78|100      |114.76  |
+|testSpec:additionalProperties.json additionalProperties are allowed by default                     |100            |470.47        |427.72         |280.27|148.18   |142.15  |
+|testSpec:additionalProperties.json additionalProperties should not look in applicators             |150.84         |468.44        |410.81         |100   |111.68   |157.49  |
+|Total time for common passed                                                                       |100            |344.76        |657.39         |166.02|107.99   |130.11  |
+|Total time for all tests (with failed)                                                             |100            |488.61        |828.47         |241.3 |115.78   |162.51  |
+|Tests passed (total: 119)                                                                          |94             |105           |112            |114   |96       |117     |
+|Tests passed, %                                                                                    |78.99          |88.24         |94.12          |95.8  |80.67    |98.32   |
 
 
 ## Optional spec tests for draft-04
 |Test                                                                                                                 |GeraintluffJsv4|JustinRainbows|LeagueJsonGuard|Opis   |StefkJval|Swaggest|
 |---------------------------------------------------------------------------------------------------------------------|---------------|--------------|---------------|-------|---------|--------|
 |testSpecOptional:format.json validation of date-time strings                                                         |-              |-             |-              |100    |-        |-       |
-|testSpecOptional:format.json validation of URIs                                                                      |-              |-             |-              |188.56 |-        |100     |
-|testSpecOptional:format.json validation of e-mail addresses                                                          |-              |268.21        |272.57         |152.64 |100.79   |100     |
-|testSpecOptional:format.json validation of IP addresses                                                              |-              |280.91        |796.06         |153.94 |100      |113.36  |
-|testSpecOptional:format.json validation of IPv6 addresses                                                            |-              |253.06        |921.35         |153.15 |100      |108.31  |
-|testSpecOptional:format.json validation of host names                                                                |-              |-             |290.34         |22467.1|100      |108.62  |
-|testSpecOptional:zeroTerminatedFloats.json some languages do not distinguish between different types of numeric value|100            |318.09        |361.77         |-      |113.75   |158     |
-|testSpecOptional:bignum.json integer                                                                                 |-              |-             |-              |326.09 |-        |100     |
-|testSpecOptional:bignum.json number                                                                                  |100            |439.82        |4003.92        |574.51 |244.25   |174.84  |
-|testSpecOptional:bignum.json string                                                                                  |100            |312.81        |363.85         |200.27 |110.57   |171.92  |
-|testSpecOptional:bignum.json integer comparison                                                                      |100            |508.41        |1037.57        |536.64 |265.95   |179.48  |
-|testSpecOptional:bignum.json float comparison with high precision                                                    |100            |301.18        |406.89         |172.21 |107.54   |141.04  |
-|testSpecOptional:bignum.json float comparison with high precision on negative numbers                                |100            |283.58        |2491.51        |162.15 |107.14   |141.66  |
-|testSpecOptional:ecmascript-regex.json ECMA 262 regex non-compliance                                                 |-              |-             |-              |116.28 |-        |100     |
+|testSpecOptional:format.json validation of URIs                                                                      |-              |-             |-              |183.33 |-        |100     |
+|testSpecOptional:format.json validation of e-mail addresses                                                          |-              |253.79        |268.98         |143.14 |106.6    |100     |
+|testSpecOptional:format.json validation of IP addresses                                                              |-              |262.34        |771.08         |143.49 |100      |108.92  |
+|testSpecOptional:format.json validation of IPv6 addresses                                                            |-              |228.52        |971.38         |142.66 |100      |103.8   |
+|testSpecOptional:format.json validation of host names                                                                |-              |-             |289.39         |20517.2|100      |105.56  |
+|testSpecOptional:zeroTerminatedFloats.json some languages do not distinguish between different types of numeric value|100            |319.16        |379.73         |-      |115.48   |159.03  |
+|testSpecOptional:bignum.json integer                                                                                 |-              |-             |-              |332.73 |-        |100     |
+|testSpecOptional:bignum.json number                                                                                  |100            |462.84        |4454.49        |588.73 |256.13   |179.67  |
+|testSpecOptional:bignum.json string                                                                                  |100            |326.05        |348.35         |201.91 |115.75   |181.82  |
+|testSpecOptional:bignum.json integer comparison                                                                      |100            |499.7         |1053.83        |541.81 |273.78   |178.49  |
+|testSpecOptional:bignum.json float comparison with high precision                                                    |100            |296.95        |429.04         |168.02 |114.1    |150.12  |
+|testSpecOptional:bignum.json float comparison with high precision on negative numbers                                |100            |296.49        |2518.89        |168.57 |109.09   |148     |
+|testSpecOptional:ecmascript-regex.json ECMA 262 regex non-compliance                                                 |-              |-             |-              |114.03 |-        |100     |
 |testSpecOptional:ecmascript-regex.json ECMA 262 regex $ does not match trailing newline                              |-              |-             |-              |-      |-        |-       |
-|testSpecOptional:ecmascript-regex.json ECMA 262 regex converts \t to horizontal tab                                  |100            |313.72        |487.08         |186.28 |148.35   |149.08  |
-|testSpecOptional:ecmascript-regex.json ECMA 262 regex escapes control codes with \c and upper letter                 |100            |321.15        |1527.65        |194.12 |150.72   |145.24  |
-|testSpecOptional:ecmascript-regex.json ECMA 262 regex escapes control codes with \c and lower letter                 |100            |332.05        |502.35         |202.39 |153.86   |142.66  |
-|testSpecOptional:ecmascript-regex.json ECMA 262 \d matches ascii digits only                                         |100            |-             |1122.96        |-      |143.51   |-       |
+|testSpecOptional:ecmascript-regex.json ECMA 262 regex converts \t to horizontal tab                                  |100            |309.62        |470.1          |186.1  |149.53   |138.71  |
+|testSpecOptional:ecmascript-regex.json ECMA 262 regex escapes control codes with \c and upper letter                 |100            |337.18        |1766.53        |209.7  |165.23   |153.03  |
+|testSpecOptional:ecmascript-regex.json ECMA 262 regex escapes control codes with \c and lower letter                 |100            |328.16        |519.01         |198.61 |165.05   |150.34  |
+|testSpecOptional:ecmascript-regex.json ECMA 262 \d matches ascii digits only                                         |100            |-             |1190.43        |-      |149.41   |-       |
 |testSpecOptional:ecmascript-regex.json ECMA 262 \D matches everything but ascii digits                               |-              |-             |-              |-      |-        |-       |
-|testSpecOptional:ecmascript-regex.json ECMA 262 \w matches ascii letters only                                        |100            |-             |1650.83        |-      |162.09   |-       |
+|testSpecOptional:ecmascript-regex.json ECMA 262 \w matches ascii letters only                                        |100            |-             |1659.8         |-      |165.57   |-       |
 |testSpecOptional:ecmascript-regex.json ECMA 262 \w matches everything but ascii letters                              |-              |-             |-              |-      |-        |-       |
-|testSpecOptional:ecmascript-regex.json ECMA 262 \s matches ascii whitespace only                                     |100            |-             |1652.74        |-      |166.71   |-       |
+|testSpecOptional:ecmascript-regex.json ECMA 262 \s matches ascii whitespace only                                     |100            |-             |1607.86        |-      |162.11   |-       |
 |testSpecOptional:ecmascript-regex.json ECMA 262 \S matches everything but ascii whitespace                           |-              |-             |-              |-      |-        |-       |
-|Total time for common passed                                                                                         |100            |338.29        |1219.21        |246.75 |153.25   |152.47  |
-|Total time for all tests (with failed)                                                                               |100            |435.32        |1897.68        |7336.45|261.63   |360.94  |
+|Total time for common passed                                                                                         |100            |342.76        |1282.82        |249.4  |160.56   |156.19  |
+|Total time for all tests (with failed)                                                                               |100            |428.99        |1992.99        |7255.98|274.72   |367.43  |
 |Tests passed (total: 24)                                                                                             |12             |12            |16             |16     |16       |16      |
 |Tests passed, %                                                                                                      |50             |50            |66.67          |66.67  |66.67    |66.67   |
 
