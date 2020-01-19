@@ -6,7 +6,7 @@ Updated on 2020.01.
 
 ## Benchmark
 
-Performance and accuracy is assessed using
+Performance and accuracy are assessed using
 * [JSON-Schema Test Suite](https://github.com/json-schema-org/JSON-Schema-Test-Suite.git)
 * Tests included in [`ajv`](https://github.com/epoberezkin/ajv/tree/master/spec/tests/schemas)
 
