@@ -1,63 +1,64 @@
 ## Mandatory spec tests for draft-04
 |GeraintluffJsv4|JustinRainbows|LeagueJsonGuard|Opis  |StefkJval|Swaggest|Test                                  |
 |---------------|--------------|---------------|------|---------|--------|--------------------------------------|
-|100.59         |334.98        |842.81         |155.9 |100      |117.96  |Total time for common passed          |
-|100            |497.31        |1020.94        |214.21|105.01   |146.97  |Total time for all tests (with failed)|
-|63             |77            |79             |76    |65       |81      |Tests passed (total: 81)              |
-|77.78          |95.06         |97.53          |93.83 |80.25    |100     |Tests passed, %                       |
+|100            |344.76        |657.39         |166.02|107.99   |130.11  |Total time for common passed          |
+|100            |488.61        |828.47         |241.3 |115.78   |162.51  |Total time for all tests (with failed)|
+|94             |105           |112            |114   |96       |117     |Tests passed (total: 119)             |
+|78.99          |88.24         |94.12          |95.8  |80.67    |98.32   |Tests passed, %                       |
 
 ## Optional spec tests for draft-04
-|GeraintluffJsv4|JustinRainbows|LeagueJsonGuard|Opis    |StefkJval|Swaggest|Test                                  |
-|---------------|--------------|---------------|--------|---------|--------|--------------------------------------|
-|100            |371.79        |1532.72        |267.26  |141.76   |149.25  |Total time for common passed          |
-|100            |1101.19       |3945.16        |15960.53|641.64   |894.79  |Total time for all tests (with failed)|
-|6              |10            |11             |13      |11       |14      |Tests passed (total: 14)              |
-|42.86          |71.43         |78.57          |92.86   |78.57    |100     |Tests passed, %                       |
+|GeraintluffJsv4|JustinRainbows|LeagueJsonGuard|Opis   |StefkJval|Swaggest|Test                                  |
+|---------------|--------------|---------------|-------|---------|--------|--------------------------------------|
+|100            |342.76        |1282.82        |249.4  |160.56   |156.19  |Total time for common passed          |
+|100            |428.99        |1992.99        |7255.98|274.72   |367.43  |Total time for all tests (with failed)|
+|12             |12            |16             |16     |16       |16      |Tests passed (total: 24)              |
+|50             |50            |66.67          |66.67  |66.67    |66.67   |Tests passed, %                       |
 
 ## Performance tests of ajv
 |GeraintluffJsv4|JustinRainbows|LeagueJsonGuard|Opis   |StefkJval|Swaggest|Test                                  |
 |---------------|--------------|---------------|-------|---------|--------|--------------------------------------|
-|100            |794.57        |958.17         |256.25 |158.75   |136.06  |Total time for common passed          |
-|220.7          |4276.47       |3734.68        |3035.88|100      |1216.39 |Total time for all tests (with failed)|
+|100            |808.46        |953.3          |273.97 |176.71   |160.91  |Total time for common passed          |
+|199.55         |3863.5        |3218.56        |3042.58|100      |1272.41 |Total time for all tests (with failed)|
 |5              |4             |4              |7      |2        |7       |Tests passed (total: 7)               |
 |71.43          |57.14         |57.14          |100    |28.57    |100     |Tests passed, %                       |
 
 ## Mandatory spec tests for draft-06
 |Opis  |Swaggest|Test                                  |
 |------|--------|--------------------------------------|
-|108.25|100     |Total time for common passed          |
-|108.25|100     |Total time for all tests (with failed)|
-|116   |116     |Tests passed (total: 116)             |
-|100   |100     |Tests passed, %                       |
+|102.01|100     |Total time for common passed          |
+|103.2 |100     |Total time for all tests (with failed)|
+|160   |156     |Tests passed (total: 160)             |
+|100   |97.5    |Tests passed, %                       |
 
 ## Optional spec tests for draft-06
-|Opis   |Swaggest|Test                                  |
-|-------|--------|--------------------------------------|
-|1014.18|100     |Total time for common passed          |
-|1014.18|100     |Total time for all tests (with failed)|
-|17     |17      |Tests passed (total: 17)              |
-|100    |100     |Tests passed, %                       |
+|Opis  |Swaggest|Test                                  |
+|------|--------|--------------------------------------|
+|1195.9|100     |Total time for common passed          |
+|1209.2|100     |Total time for all tests (with failed)|
+|20    |19      |Tests passed (total: 27)              |
+|74.07 |70.37   |Tests passed, %                       |
 
 ## Mandatory spec tests for draft-07
 |Opis  |Swaggest|Test                                  |
 |------|--------|--------------------------------------|
-|117.94|100     |Total time for common passed          |
-|117.23|100     |Total time for all tests (with failed)|
-|121   |123     |Tests passed (total: 123)             |
-|98.37 |100     |Tests passed, %                       |
+|110.07|100     |Total time for common passed          |
+|110.68|100     |Total time for all tests (with failed)|
+|173   |171     |Tests passed (total: 175)             |
+|98.86 |97.71   |Tests passed, %                       |
 
 ## Optional spec tests for draft-07
 |Opis  |Swaggest|Test                                  |
 |------|--------|--------------------------------------|
-|127.22|100     |Total time for common passed          |
-|127.22|100     |Total time for all tests (with failed)|
-|11    |11      |Tests passed (total: 11)              |
-|100   |100     |Tests passed, %                       |
+|118.37|100     |Total time for common passed          |
+|118.37|100     |Total time for all tests (with failed)|
+|14    |14      |Tests passed (total: 21)              |
+|66.67 |66.67   |Tests passed, %                       |
 
 ## Format spec tests for draft-07
 |Opis  |Swaggest|Test                                  |
 |------|--------|--------------------------------------|
-|749.95|100     |Total time for common passed          |
-|688.77|100     |Total time for all tests (with failed)|
-|16    |17      |Tests passed (total: 17)              |
-|94.12 |100     |Tests passed, %                       |
+|904.88|100     |Total time for common passed          |
+|839.89|100     |Total time for all tests (with failed)|
+|16    |16      |Tests passed (total: 17)              |
+|94.12 |94.12   |Tests passed, %                       |
+
