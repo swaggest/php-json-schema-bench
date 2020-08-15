@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/swaggest/php-json-schema-bench.svg?branch=master)](https://travis-ci.org/swaggest/php-json-schema-bench)
 
-Updated on 2020.01.
+Updated on 2020.08.
 
 ## Benchmark
 
@@ -17,22 +17,22 @@ If single test is failing, whole test case is failing.
 
 ### Draft 04
 
-* [`justinrainbow/json-schema`](https://github.com/justinrainbow/json-schema) `5.2.9`
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.18`
+* [`justinrainbow/json-schema`](https://github.com/justinrainbow/json-schema) `5.2.10`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.19`
 * [`geraintluff/jsv4`](https://github.com/geraintluff/jsv4-php) `v1.0.1`
 * [`stefk/jval`](https://github.com/stefk/JVal) `master@1c26dd2c1`
 * [`league/json-guard`](https://github.com/thephpleague/json-guard) `master@d03dad628`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.25`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.29`
 
 ### Draft 06
 
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.18`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.25`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.19`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.29`
 
 ### Draft 07
 
-* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.18`
-* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.25`
+* [`opis/json-schema`](https://github.com/opis/json-schema) `1.0.19`
+* [`swaggest/json-schema`](https://github.com/swaggest/php-json-schema) `v0.12.29`
 
 ## Results
 
